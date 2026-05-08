@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ListaProdutos from './components/ListaProdutos';
 import DetalhesProduto from './pages/DetalhesProduto';
+import './App.module.css';
 
 function App() {
   return (

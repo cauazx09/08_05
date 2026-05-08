@@ -1,0 +1,87 @@
+.conteudo {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 26px 22px 34px;
+}
+
+.titulo {
+  text-align: center;
+  color: #1d4ed8;
+  font-size: clamp(2rem, 2.8vw, 2.6rem);
+  font-weight: 800;
+  margin-bottom: 24px;
+  letter-spacing: 0.01em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid rgba(30, 64, 175, 0.12);
+  border-radius: 24px;
+  padding: 24px 18px;
+  box-shadow: 0 18px 60px rgba(15, 23, 42, 0.08);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(59, 130, 246, 0.25);
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.12);
+}
+
+.imagem {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 18px;
+}
+
+.nome {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 14px;
+  min-height: 4.5rem;
+  overflow: hidden;
+}
+
+.preco {
+  margin: 0 0 18px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #16a34a;
+}
+
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: #1d4ed8;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.22s ease, transform 0.22s ease;
+}
+
+.botao:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+.semProdutos {
+  text-align: center;
+  color: #475569;
+  font-size: 1rem;
+}

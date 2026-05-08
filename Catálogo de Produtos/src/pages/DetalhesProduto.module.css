@@ -1,0 +1,117 @@
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(180deg, #eef5fc 0%, #f8fbff 100%);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #111827;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) 1.3fr;
+  gap: 32px;
+  width: 100%;
+  max-width: 980px;
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+}
+
+.imagem {
+  width: 100%;
+  min-height: 380px;
+  max-height: 520px;
+  object-fit: contain;
+  background: #f6f8fc;
+  padding: 28px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 34px 36px;
+  gap: 18px;
+}
+
+.categoria {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.1);
+  color: #2563eb;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.titulo {
+  font-size: clamp(2rem, 2.4vw, 3rem);
+  line-height: 1.05;
+  margin: 0;
+  color: #0f172a;
+}
+
+.descricao {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #475569;
+  margin: 0;
+}
+
+.preco {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #16a34a;
+  margin-top: 12px;
+}
+
+.botaoVoltar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  width: fit-content;
+  padding: 14px 30px;
+  border-radius: 999px;
+  background: #111827;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.22s ease, background-color 0.22s ease;
+}
+
+.botaoVoltar:hover {
+  background: #1f2937;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 880px) {
+  .card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .info {
+    padding: 28px 24px 32px;
+  }
+
+  .imagem {
+    min-height: 300px;
+  }
+
+  .botaoVoltar {
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
